@@ -9,6 +9,8 @@ RUN conda update -y pandas
 RUN pip install graphviz
 RUN pip install bambi
 RUN pip install lifelines
+RUN pip install feather-format
+RUN pip install patsy
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 
