@@ -11,6 +11,9 @@ RUN pip install bambi
 RUN pip install lifelines
 RUN pip install feather-format
 RUN pip install patsy
+RUN pip install lime
+RUN conda install -c conda-forge python-graphviz
+
 
 COPY jupyter_notebook_config.py /root/.jupyter/
 
